@@ -1,0 +1,336 @@
+body{
+  background-color: #88F9E5;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.row .col{
+  padding: 0;
+}
+
+.shadow-text {
+  color: #9e9e9e;
+}
+
+.rel-positioned {
+  position: relative;
+}
+
+.btn-wrap {
+  margin-top: 2rem;
+}
+
+form {
+  height: 500px;
+  border-radius: 4px;
+}
+
+form#my-form-login {
+  position: absolute;
+  padding: 40px !important;
+  background-color: #FEFFFF;
+  transform: translateY(0) scale(1);
+}
+
+.my-form-login-zoomout {
+  animation-name: login-form-animate-out;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.1, 1.21, 0.49, 1.02);
+}
+
+.my-form-login-zoomin {
+  animation-name: login-form-animate-in;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.1, 1.21, 0.49, 1.02);
+}
+
+form#my-form-login .input-field input[type=text]:focus + label,
+form#my-form-login .input-field input[type=password]:focus + label {
+  color: #ED2855;
+}
+
+form#my-form-login .input-field input[type=password]:focus,
+form#my-form-login .input-field input[type=text]:focus
+{
+  border-bottom: 1px solid #ED2855;
+  box-shadow: 0 1px 0 0 #ED2855;
+}
+
+form#my-form-login h4 {
+  color: #ED2855;
+}
+
+#register-action {
+  position: absolute;
+  top: 22px;
+  right: -40px;
+  background-color: #ED2855;
+}
+
+.btn-custom {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  top:0;
+  right: 0;
+  transform: translateX(40px) translateY(20px);
+  background-color: #ED2855;
+  display: block;
+  text-align: center;
+}
+
+.btn-custom i{
+  line-height: 80px;
+  color: #fff;
+}
+
+form#my-form-register {
+  color: #FEFFFF;
+  padding: 40px !important;
+  background-color: #ED2855;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top:0;
+  right:0;
+  transform: translateX(40px) translateY(20px);
+}
+
+form#my-form-register .input-field input[type=text] + label,
+form#my-form-register .input-field input[type=password] + label {
+  color: #FEFFFF;
+}
+
+form#my-form-register .input-field input[type=password],
+form#my-form-register .input-field input[type=text]
+{
+  border-bottom: 1px solid #FEFFFF;
+  box-shadow: 0 1px 0 0 #FEFFFF;
+}
+
+form#my-form-register .btn {
+  color: #ED2855;
+}
+
+.my-button-l {
+  width: 50%;
+  height: 70px;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  display: block;
+  line-height: 70px;
+}
+
+.go-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff !important;
+  border:1px solid #9e9e9e;
+  color: #9e9e9e;
+}
+
+.correct-btn{
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transform: translateY(35px);
+}
+.my-button-xl {
+   width: 100%;
+   height: 70px;
+   font-size: 1.5rem; 
+   padding: 20px 0;
+}
+
+.link {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.input-field label{
+  left: 0;
+}
+
+.signup-form-animate-in {
+  animation-name: form_animate_in;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.1, 1.21, 0.49, 1.02);
+}
+
+.signup-form-animate-out {
+  animation-name: form_animate_out;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.1, 1.21, 0.49, 1.02);
+}
+
+.custom_btn_animate_in{
+  animation-name: btn_animate_in;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.1, 1.21, 0.49, 1.02);
+}
+
+.custom_btn_animate_out{
+  animation-name: btn_animate_out;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.1, 1.21, 0.49, 1.02);
+}
+
+.correct-btn-in{
+  animation-name: correct-btn-animate-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.1, 1.21, 0.49, 1.02);
+}
+
+
+@keyframes form_animate_in {
+
+  25%{
+    transform: translateX(20px) translateY(35px);
+    border-radius: 50% 0 25% 50%;
+  }
+
+  50%{
+    border-radius: 25% 0 0 50%;
+    transform: translateX(0px) translateY(50px);
+  }
+
+  75%{
+    border-radius: 0 0 0 25%;
+    transform: translateX(0) translateY(0);
+  }
+
+  100% {
+    width: 100%;
+    height: 500px;
+    border-radius: 4px;
+    transform: translateX(0) translateY(0);
+  }
+
+}
+
+@keyframes form_animate_out {
+
+  0%{
+    width: 100%;
+    height: 400px;
+    border-radius: 4px;
+    transform: translate(0px);
+  }
+
+  25%{
+    border-radius: 50% 0 50% 50%;
+    transform: translate(0);
+  }
+
+  50%{
+    transform: translate(0px) translateY(50px);
+  }
+
+  75%{
+    transform: translateX(20px) translateY(35px);
+  }
+
+  100%{
+    width: 80px;
+    height: 80px;
+    transform: translate(40px) translateY(20px);
+  }
+
+}
+
+@keyframes btn_animate_in {
+
+  25%{
+    transform: translateX(20px) translateY(35px) rotate(10deg);
+  }
+
+  50%{
+    transform: translate(0px) translateY(50px) rotate(20deg);
+  }
+
+  75%{
+    transform: translate(-20px) translateY(35px) rotate(30deg);
+  }
+
+  100%{
+    transform: translate(-40px) translateY(20px) rotate(45deg) ;
+  }
+
+}
+
+@keyframes btn_animate_out {
+
+  25%{
+    transform: translate(-20px) translateY(35px) rotate(30deg);
+  }
+
+  50%{
+    transform: translate(0px) translateY(50px) rotate(20deg);
+  }
+
+  75%{
+    transform: translateX(20px) translateY(35px) rotate(10deg);
+  }
+
+  100%{
+    transform: translate(40px) translateY(20px) rotate(0deg) ;
+  }
+
+}
+
+@keyframes correct-btn-animate-in {
+  0%{
+    width: 75px;
+    height: 0;
+    transform: translateY(35px);
+  }
+
+
+  100%{
+    width: 50%;
+    height: 70px;
+    border-radius: 0;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes login-form-animate-out {
+
+  0%{
+    transform: translateY(0) scale(1);
+  }
+
+  100%{
+    transform: translateY(-20px) scale(0.95);
+  }
+
+}
+
+@keyframes login-form-animate-in {
+
+  0%{
+    transform: translateY(-20px) scale(0.95);
+  }
+
+  100%{
+    transform: translateY(0) scale(1);
+  }
+
+}
